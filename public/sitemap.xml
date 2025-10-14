@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://adam4056.github.io/myBlog/</loc>
+    <loc>http://localhost:1313/myBlog/</loc>
     <lastmod>2025-10-14T18:26:03+02:00</lastmod>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/posts/</loc>
+    <loc>http://localhost:1313/myBlog/posts/</loc>
     <lastmod>2025-10-14T18:26:03+02:00</lastmod>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/posts/test-clanek/</loc>
+    <loc>http://localhost:1313/myBlog/posts/test-clanek/</loc>
     <lastmod>2025-10-14T18:26:03+02:00</lastmod>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/posts/prvni-clanek/</loc>
+    <loc>http://localhost:1313/myBlog/posts/prvni-clanek/</loc>
     <lastmod>2025-10-14T17:44:12+02:00</lastmod>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/categories/</loc>
+    <loc>http://localhost:1313/myBlog/categories/</loc>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/tags/</loc>
+    <loc>http://localhost:1313/myBlog/tags/</loc>
   </url>
 </urlset>
