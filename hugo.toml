@@ -1,5 +1,0 @@
-baseURL = "https://adam4056.github.io/myBlog/"
-languageCode = "cs"
-title = "Můj Blog"
-theme = "PaperMod"
-publishDir = "public"
