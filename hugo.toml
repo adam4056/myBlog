@@ -1,0 +1,5 @@
+baseURL = "https://tvuj-username.github.io/"
+languageCode = "cs"
+title = "Můj Blog"
+theme = "PaperMod"
+publishDir = "public"
