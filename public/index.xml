@@ -2,18 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Můj Blog</title>
-    <link>http://localhost:1313/myBlog/</link>
+    <link>/</link>
     <description>Recent content on Můj Blog</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>cs</language>
-    <lastBuildDate>Tue, 14 Oct 2025 18:26:03 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/myBlog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Clanek</title>
-      <link>http://localhost:1313/myBlog/posts/test-clanek/</link>
-      <pubDate>Tue, 14 Oct 2025 18:26:03 +0200</pubDate>
-      <guid>http://localhost:1313/myBlog/posts/test-clanek/</guid>
-      <description>&lt;h2 id=&#34;this-is-a-test&#34;&gt;This is a test&lt;/h2&gt;</description>
+      <title>Návod na Sora 2</title>
+      <link>/posts/n%C3%A1vod-na-sora-2/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/n%C3%A1vod-na-sora-2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Sora 2&lt;/strong&gt; je nejnovější počin od &lt;strong&gt;OpenAI&lt;/strong&gt;, co se týče generování videí.&lt;br&gt;
+Je to vlastně sociální síť, na které jsou pouze &lt;strong&gt;AI generovaná videa&lt;/strong&gt;.&lt;br&gt;
+Těmito AI videi se zaplavují i české sociální sítě.&lt;/p&gt;
+&lt;p&gt;Pokud si ji ale budete chtít vyzkoušet, narazíte na problém — je dostupná pouze v &lt;strong&gt;USA&lt;/strong&gt;.&lt;br&gt;
+Dnes vám ukážu, jak ji používat v &lt;strong&gt;České republice&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;webová-verze-sory&#34;&gt;Webová verze Sory&lt;/h2&gt;
+&lt;p&gt;Dnes se budeme bavit pouze o &lt;strong&gt;webové verzi Sory&lt;/strong&gt;.&lt;br&gt;
+Základem je &lt;strong&gt;VPN&lt;/strong&gt;, která má své servery v USA.&lt;br&gt;
+Můžete použít například &lt;a href=&#34;https://get.surfshark.net/aff_c?offer_id=926&amp;amp;aff_id=41789&#34;&gt;Surfshark VPN&lt;/a&gt; nebo třeba &lt;a href=&#34;https://windscribe.com/yo/dzno0erq&#34;&gt;Windscribe&lt;/a&gt;,&lt;br&gt;
+která je zdarma do určitého počtu dat.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
