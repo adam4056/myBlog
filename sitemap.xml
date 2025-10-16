@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/myBlog/</loc>
+    <loc>https://adam4056.github.io/myBlog/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/myBlog/posts/</loc>
+    <loc>https://adam4056.github.io/myBlog/posts/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/myBlog/posts/test/</loc>
+    <loc>https://adam4056.github.io/myBlog/posts/test/</loc>
     <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/myBlog/posts/n%C3%A1vod-na-sora-2/</loc>
+    <loc>https://adam4056.github.io/myBlog/posts/n%C3%A1vod-na-sora-2/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/myBlog/categories/</loc>
+    <loc>https://adam4056.github.io/myBlog/categories/</loc>
   </url><url>
-    <loc>/myBlog/tags/</loc>
+    <loc>https://adam4056.github.io/myBlog/tags/</loc>
   </url>
 </urlset>

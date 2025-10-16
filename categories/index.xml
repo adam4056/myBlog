@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Můj Blog</title>
-    <link>/myBlog/categories/</link>
+    <link>https://adam4056.github.io/myBlog/categories/</link>
     <description>Recent content in Categories on Můj Blog</description>
     <generator>Hugo -- 0.151.1</generator>
     <language>cs</language>
-    <atom:link href="/myBlog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://adam4056.github.io/myBlog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
