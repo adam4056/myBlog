@@ -1,4 +1,4 @@
-baseURL: "adam4056.github.io/myBlog"
+baseURL: "https://adam4056.github.io/myBlog"
 languageCode: "cs"
 title: "Můj Blog"
 theme: "PaperMod"
