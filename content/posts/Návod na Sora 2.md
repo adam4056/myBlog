@@ -1,7 +1,7 @@
 ---
 date: 2025-10-14
 draft: false
-title: Test Clanek
+title: Návod na Sora 2
 ---
 
 **Sora 2** je nejnovější počin od **OpenAI**, co se týče generování videí.  
