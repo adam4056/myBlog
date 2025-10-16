@@ -1,3 +1,4 @@
+baseURL: "/myBlog"
 languageCode: "cs"
 title: "Můj Blog"
 theme: "PaperMod"
