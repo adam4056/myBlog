@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vize on Můj Blog</title>
+    <link>https://adam4056.github.io/myBlog/categories/vize/</link>
+    <description>Recent content in Vize on Můj Blog</description>
+    <generator>Hugo -- 0.151.2</generator>
+    <language>cs</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://adam4056.github.io/myBlog/categories/vize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIZE Super aplikace</title>
+      <link>https://adam4056.github.io/myBlog/posts/vize-super-aplikace/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://adam4056.github.io/myBlog/posts/vize-super-aplikace/</guid>
+      <description>&lt;p&gt;Pokud vám pojem &lt;strong&gt;super aplikace&lt;/strong&gt; nic neříká, nedivím se – na &lt;em&gt;západním internetu&lt;/em&gt; se o nich příliš nemluví. Tak co to vlastně je? Super aplikace jsou platformy, které v sobě kombinují menší, nezávisle vyvinuté &lt;strong&gt;mikroaplikace&lt;/strong&gt;. Dá se říct, že jsou to takové &lt;strong&gt;švýcarské nože&lt;/strong&gt; digitálního světa. Nejvíce se rozšířily v asijských zemích, jako je Čína, Indie nebo Singapur. Mezi nejznámější patří &lt;strong&gt;WeChat&lt;/strong&gt; oblíbený v Číně, &lt;strong&gt;Grab&lt;/strong&gt; v Singapuru nebo &lt;strong&gt;Tata Neu&lt;/strong&gt; v Indii.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
