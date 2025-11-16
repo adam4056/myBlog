@@ -4,7 +4,7 @@
     <title>Můj Blog</title>
     <link>https://adam4056.github.io/myBlog/</link>
     <description>Recent content on Můj Blog</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>cs</language>
     <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://adam4056.github.io/myBlog/index.xml" rel="self" type="application/rss+xml" />
@@ -31,6 +31,13 @@ Dnes vám ukážu, jak ji používat v &lt;strong&gt;České republice&lt;/stron
 Základem je &lt;strong&gt;VPN&lt;/strong&gt;, která má své servery v USA.&lt;br&gt;
 Můžete použít například &lt;a href=&#34;https://get.surfshark.net/aff_c?offer_id=926&amp;amp;aff_id=41789&#34;&gt;Surfshark VPN&lt;/a&gt; nebo třeba &lt;a href=&#34;https://windscribe.com/yo/dzno0erq&#34;&gt;Windscribe&lt;/a&gt;,&lt;br&gt;
 která je zdarma do určitého počtu dat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://adam4056.github.io/myBlog/posts/m%C5%AFj-vlastn%C3%AD-multi-vyhled%C3%A1va%C4%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://adam4056.github.io/myBlog/posts/m%C5%AFj-vlastn%C3%AD-multi-vyhled%C3%A1va%C4%8D/</guid>
+      <description>&lt;p&gt;Dlouhou dobu jsem používal vyhledávač DuckDuckGo. Jedním z důvodů bylo, že obsahoval funkci &lt;strong&gt;bangs&lt;/strong&gt;, což je velmi praktické pro efektivní vyhledávání. Umožňuje z jednoho vyhledávače přepínat na spoustu jiných. Například když hledám slovo &lt;code&gt;apple&lt;/code&gt; a chci najít obrázky na Google, stačí napsat do DuckDuckGo &lt;code&gt;apple !gi&lt;/code&gt; a okamžitě mě přesměruje na Google Images. Tato funkce byla velice návyková, ale občas nefungovala přesně podle očekávání. Navíc se mi nelíbilo, že DuckDuckGo má teoreticky přístup k dotazu, který nakonec směřuje úplně jinam, a tak jsem se rozhodl vytvořit vlastní alternativu.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
