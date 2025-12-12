@@ -6,8 +6,7 @@ publishDir: "public"
 enableRobotsTXT: true
 
 params:
-  author: "Adam"                       # jméno autora, zobrazí se v šablonách
-  description: "Osobní blog o vývoji a dalších věcech"
+  author: "Adam Skřivánek"                       # jméno autora, zobrazí se v šablonách
   keywords: ["blog", "vývoj", "programování", "AI", "bezpečnost"]
   copyright: "© 2025 Adam Skřivánek"             # text v patičce
   showReadingTime: true                # zobrazit odhadovaný čas čtení
@@ -28,10 +27,6 @@ params:
   showCategories: true
   showTags: true
 
-  # Sociální odkazy (využije téma pro ikony/linky)
-  social:
-    - name: "github"
-      url: "https://github.com/adam4056"
 
   # Vyhledávání
   enableSearch: true
