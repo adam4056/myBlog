@@ -4,3 +4,55 @@ title: "Můj Blog"
 theme: "PaperMod"
 publishDir: "public"
 enableRobotsTXT: true
+
+params:
+  author: "Adam"                       # jméno autora, zobrazí se v šablonách
+  description: "Osobní blog o vývoji a dalších věcech"
+  keywords: ["blog", "vývoj", "programování", "AI", "bezpečnost"]
+  copyright: "© 2025 Adam Skřivánek"             # text v patičce
+  showReadingTime: true                # zobrazit odhadovaný čas čtení
+  defaultContentLanguage: "cs"
+  dateFormat: "02.01.2006"             # formát data (Go layout)
+  paginate: 10                         # počet příspěvků na stránku
+  paginatePath: "page"                 # cesta pro stránkování
+  mainSections:
+    - "posts"
+
+  # Vzhled / téma (PaperMod-specifické volby — ověř v dokumentaci tématu)
+  themeColor: "auto"                   # "auto" | "light" | "dark"
+  disableThemeToggle: false            # zakázat přepínání světlo/tma
+  accent: "blue"                       # akcentní barva (paperMod podporuje sadu názvů)
+  showToc: true                        # zobrazit TOC (table of contents)
+  showShareButtons: true               # zobrazit sdílecí tlačítka u článků
+  showLastMod: true                    # zobrazit datum poslední úpravy
+  showCategories: true
+  showTags: true
+
+  # Sociální odkazy (využije téma pro ikony/linky)
+  social:
+    - name: "github"
+      url: "https://github.com/adam4056"
+
+  # Vyhledávání
+  enableSearch: true
+  search:
+    provider: "fuse"                    # "fuse" (lokální)
+  # Zvýraznění kódu
+  highlight:
+    style: "monokai"                    # např. monokai, dracula, github
+    lineNos: true
+
+  # Komentáře / disqus / giscus
+  enableComments: true
+  disqusShortname: ""                   # nebo použij giscus/nástroj dle preference
+
+  # Feed / sitemap
+  enableRSS: true
+  rssLimit: 20
+  sitemap:
+    changefreq: "monthly"
+    priority: 0.5
+
+  # Advanced PaperMod tweaks
+  compactFooter: false
+  showReadingTimeSuffix: "min čtení"
