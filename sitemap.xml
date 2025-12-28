@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://adam4056.github.io/myBlog/</loc>
-    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <loc>https://adam4056.github.io/myBlog/posts/ai-a-pravdivost/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://adam4056.github.io/myBlog/posts/m%C5%AFj-vlastn%C3%AD-multi-vyhled%C3%A1va%C4%8D/</loc>
-    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <loc>https://adam4056.github.io/myBlog/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adam4056.github.io/myBlog/posts/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://adam4056.github.io/myBlog/posts/m%C5%AFj-vlastn%C3%AD-multi-vyhled%C3%A1va%C4%8D/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://adam4056.github.io/myBlog/categories/</loc>

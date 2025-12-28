@@ -4,10 +4,20 @@
     <title>Posts on Můj Blog</title>
     <link>https://adam4056.github.io/myBlog/posts/</link>
     <description>Recent content in Posts on Můj Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.153.3</generator>
     <language>cs</language>
-    <lastBuildDate>Sun, 16 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://adam4056.github.io/myBlog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI a pravdivost: Přichází éra velkého informačního filtru?</title>
+      <link>https://adam4056.github.io/myBlog/posts/ai-a-pravdivost/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://adam4056.github.io/myBlog/posts/ai-a-pravdivost/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Upozornění:&lt;/strong&gt; Následující text je mou osobní teorií a subjektivním pohledem na aktuální technologické trendy. Cílem článku je nabídnout analytický pohled k zamyšlení a diskuzi, nikoliv prezentovat nezvratná fakta.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;V dnešním článku se podíváme na jedno z nejaktuálnějších témat, a to na &lt;strong&gt;AI a pravdivost&lt;/strong&gt;. Na sociálních sítích se přibližně před dvěma lety začal objevovat AI generovaný obsah – jako první to byly obrázky a v posledních měsících se přidala videa. Tento obsah bývá (ne vždy, ale velmi často) nízké kvality, což ale není ten zásadní problém. Tím, co řešíme a řešit budeme, jsou &lt;strong&gt;fake news&lt;/strong&gt;. Ty zde byly vždy, ale AI jim pomohla nabýt na autenticitě, ať už generováním obrazu a audia, nebo možností perfektně cílit texty pomocí jazykových modelů. Tyto nástroje dávají dezinformátorům velkou moc manipulovat davy.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Můj vlastní multi-vyhledávač</title>
       <link>https://adam4056.github.io/myBlog/posts/m%C5%AFj-vlastn%C3%AD-multi-vyhled%C3%A1va%C4%8D/</link>
