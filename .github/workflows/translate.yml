@@ -6,11 +6,13 @@ on:
       - 'content/posts/*.md'
     branches:
       - main
-  workflow_dispatch: # Přidáno: umožňuje ruční spuštění
+  workflow_dispatch:
 
 jobs:
   translate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Crucial for pushing changes
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,39 +29,42 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-generativeai PyYAML
 
-      - name: Get files to translate
-        id: files
-        run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            # Při ručním spuštění projdi všechny české články
-            FILES=$(find content/posts -name "*.md" | tr '\n' ' ')
-            echo "all=$FILES" >> $GITHUB_OUTPUT
-            echo "any_changed=true" >> $GITHUB_OUTPUT
-          else
-            # Při pushi jen změněné
-            echo "Checking changed files..."
-            # Použijeme git diff pro zjištění změn oproti předchozímu commitu
-            FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '^content/posts/.*\.md$' | tr '\n' ' ')
-            if [ -z "$FILES" ]; then
-              echo "any_changed=false" >> $GITHUB_OUTPUT
-            else
-              echo "all=$FILES" >> $GITHUB_OUTPUT
-              echo "any_changed=true" >> $GITHUB_OUTPUT
-            fi
-          fi
-
-      - name: Translate files
-        if: steps.files.outputs.any_changed == 'true'
+      - name: Sync and Translate
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          python scripts/translate.py ${{ steps.files.outputs.all }}
+          # Create English posts directory if it doesn't exist
+          mkdir -p content/en/posts
+          
+          # Initialize a flag to track if anything was translated
+          TRANSLATED=false
+          
+          # Loop through all Czech posts
+          for file in content/posts/*.md; do
+            [ -e "$file" ] || continue
+            filename=$(basename "$file")
+            target="content/en/posts/$filename"
+            
+            # Check if translation is needed:
+            # 1. Target doesn't exist
+            # 2. Source is newer than target
+            if [ ! -f "$target" ] || [ "$file" -nt "$target" ]; then
+              echo "Translating: $file"
+              python scripts/translate.py "$file"
+              TRANSLATED=true
+            else
+              echo "Skipping (up to date): $file"
+            fi
+          done
+          
+          # Export flag to the next steps
+          echo "translated=$TRANSLATED" >> $GITHUB_ENV
 
       - name: Commit and push changes
-        if: steps.changed-files.outputs.any_changed == 'true'
+        if: env.translated == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/en/posts/
-          git commit -m "docs: auto-translate new posts [skip ci]" || echo "No changes to commit"
+          git commit -m "docs: sync and translate posts [skip ci]" || echo "No changes to commit"
           git push
