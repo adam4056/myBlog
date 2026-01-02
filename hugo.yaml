@@ -14,32 +14,12 @@ languages:
     weight: 1
     params:
       title: "TechVizor"
-      profileMode:
-        enabled: true
-        title: "Adam Skřivánek"
-        subtitle: "Sonda do světa AI, technologií a digitální svobody."
-        imageUrl: "https://github.com/adam4056.png"
-        imageWidth: 120
-        imageHeight: 120
-        buttons:
-          - name: "Články"
-            url: "posts"
   en:
     languageName: "English"
     contentDir: "content/en"
     weight: 2
     params:
       title: "TechVizor"
-      profileMode:
-        enabled: true
-        title: "Adam Skřivánek"
-        subtitle: "Exploring AI, future tech, and digital freedom."
-        imageUrl: "https://github.com/adam4056.png"
-        imageWidth: 120
-        imageHeight: 120
-        buttons:
-          - name: "Posts"
-            url: "posts"
 
 params:
   author: "Adam Skřivánek"

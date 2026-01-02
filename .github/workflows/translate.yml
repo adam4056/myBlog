@@ -6,6 +6,7 @@ on:
       - 'content/posts/*.md'
     branches:
       - main
+  workflow_dispatch: # Přidáno: umožňuje ruční spuštění
 
 jobs:
   translate:
@@ -26,20 +27,33 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-generativeai PyYAML
 
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v41
-        with:
-          files: content/posts/*.md
+      - name: Get files to translate
+        id: files
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            # Při ručním spuštění projdi všechny české články
+            FILES=$(find content/posts -name "*.md" | tr '\n' ' ')
+            echo "all=$FILES" >> $GITHUB_OUTPUT
+            echo "any_changed=true" >> $GITHUB_OUTPUT
+          else
+            # Při pushi jen změněné
+            echo "Checking changed files..."
+            # Použijeme git diff pro zjištění změn oproti předchozímu commitu
+            FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '^content/posts/.*\.md$' | tr '\n' ' ')
+            if [ -z "$FILES" ]; then
+              echo "any_changed=false" >> $GITHUB_OUTPUT
+            else
+              echo "all=$FILES" >> $GITHUB_OUTPUT
+              echo "any_changed=true" >> $GITHUB_OUTPUT
+            fi
+          fi
 
-      - name: Translate changed files
-        if: steps.changed-files.outputs.any_changed == 'true'
+      - name: Translate files
+        if: steps.files.outputs.any_changed == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            python scripts/translate.py "$file"
-          done
+          python scripts/translate.py ${{ steps.files.outputs.all }}
 
       - name: Commit and push changes
         if: steps.changed-files.outputs.any_changed == 'true'
