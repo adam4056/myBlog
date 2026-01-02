@@ -14,12 +14,16 @@ languages:
     weight: 1
     params:
       title: "TechVizor"
+      profileMode:
+        enabled: false
   en:
     languageName: "English"
     contentDir: "content/en"
     weight: 2
     params:
       title: "TechVizor"
+      profileMode:
+        enabled: false
 
 params:
   author: "Adam Skřivánek"
