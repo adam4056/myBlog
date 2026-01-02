@@ -1,0 +1,51 @@
+name: Auto Translate Posts
+
+on:
+  push:
+    paths:
+      - 'content/posts/*.md'
+    branches:
+      - main
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-generativeai PyYAML
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v41
+        with:
+          files: content/posts/*.md
+
+      - name: Translate changed files
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            python scripts/translate.py "$file"
+          done
+
+      - name: Commit and push changes
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add content/en/posts/
+          git commit -m "docs: auto-translate new posts [skip ci]" || echo "No changes to commit"
+          git push
